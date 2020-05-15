@@ -22,37 +22,13 @@
           <div class="col-md-5"><img class="d-block w-270 m-auto" src="img/features/01.jpg" alt="Online Shopping"></div>
           <div class="col-md-7 text-md-left text-center">
             <div class="mt-30 hidden-md-up"></div>
-            <h2>Search, Select, Buy Online.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id purus at risus pellentesque faucibus a quis eros. In eu fermentum leo. Integer ut eros lacus. Proin ut accumsan leo. Morbi vitae est eget dolor consequat aliquam eget quis dolor. Mauris rutrum fermentum erat, at euismod lorem pharetra nec. Duis erat lectus, ultrices euismod sagittis at, pharetra eu nisl. Phasellus id ante at velit tincidunt hendrerit. Aenean dolor dolor, tristique nec placerat nec.</p><a class="text-medium text-decoration-none" href="shop-grid-ls.html">View Products&nbsp;<i class="icon-arrow-right"></i></a>
+            <h2>Who Are We?</h2>
+            <p>E-xact Prints is a smart print shop based in Lagos; a leading provider of smart and innovative solution in digital printing, direct imaging printing, offset printing, large format printing, being an expert in printing solutions and technologies, our product and services offers our clients a wide variety of printing solutions that saves time and money, and enhance  the printing abilities of their organizations.
+
+With our comprehensive knowledge of print methodologies we offer our client innovative way of idea conceptualization, design generation and print planning arrangement which provide for professional and efficient handling of all printing jobs. If you are looking for a Professional Printing and Branding Company based in Nigeria, look no further, E-xact print is the No. 1 printing destination for all quality print lovers in Nigeria.  </p><a class="text-medium text-decoration-none" href="shop-grid-ls.html">View Products&nbsp;<i class="icon-arrow-right"></i></a>
           </div>
         </div>
         <hr>
-        <div class="row align-items-center padding-top-2x padding-bottom-2x">
-          <div class="col-md-5 order-md-2"><img class="d-block w-270 m-auto" src="img/features/02.jpg" alt="Delivery"></div>
-          <div class="col-md-7 order-md-1 text-md-left text-center">
-            <div class="mt-30 hidden-md-up"></div>
-            <h2>Fast Delivery Worldwide.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id purus at risus pellentesque faucibus a quis eros. In eu fermentum leo. Integer ut eros lacus. Proin ut accumsan leo. Morbi vitae est eget dolor consequat aliquam eget quis dolor. Mauris rutrum fermentum erat, at euismod lorem pharetra nec. Duis erat lectus, ultrices euismod sagittis at, pharetra eu nisl. Phasellus id ante at velit tincidunt hendrerit. Aenean dolor dolor, tristique nec placerat nec.</p><a class="text-medium text-decoration-none" href="#">Shipping Details&nbsp;<i class="icon-arrow-right"></i></a>
-          </div>
-        </div>
-        <hr>
-        <div class="row align-items-center padding-top-2x padding-bottom-2x">
-          <div class="col-md-5"><img class="d-block w-270 m-auto" src="img/features/03.jpg" alt="Mobile App"></div>
-          <div class="col-md-7 text-md-left text-center">
-            <div class="mt-30 hidden-md-up"></div>
-            <h2>Great Mobile App. Shop On The Go.</h2>
-            <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id purus at risus pellentesque faucibus a quis eros. In eu fermentum leo. Integer ut eros lacus. Proin ut accumsan leo. Morbi vitae est eget dolor consequat aliquam eget quis dolor.</p><a class="market-button apple-button" href="#"><span class="mb-subtitle">Download on the</span><span class="mb-title">App Store</span></a><a class="market-button google-button" href="#"><span class="mb-subtitle">Download on the</span><span class="mb-title">Google Play</span></a><a class="market-button windows-button" href="#"><span class="mb-subtitle">Download on the</span><span class="mb-title">Windows Store</span></a>
-          </div>
-        </div>
-        <hr>
-        <div class="row align-items-center padding-top-2x padding-bottom-2x">
-          <div class="col-md-5 order-md-2"><img class="d-block w-270 m-auto" src="img/features/04.jpg" alt="Delivery"></div>
-          <div class="col-md-7 order-md-1 text-md-left text-center">
-            <div class="mt-30 hidden-md-up"></div>
-            <h2>Shop Offline. Cozy Outlet Stores.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id purus at risus pellentesque faucibus a quis eros. In eu fermentum leo. Integer ut eros lacus. Proin ut accumsan leo. Morbi vitae est eget dolor consequat aliquam eget quis dolor. Mauris rutrum fermentum erat, at euismod lorem pharetra nec. Duis erat lectus, ultrices euismod sagittis at, pharetra eu nisl. Phasellus id ante at velit tincidunt hendrerit. Aenean dolor dolor, tristique nec placerat nec.</p><a class="text-medium text-decoration-none" href="contacts.html">See Outlet Stores&nbsp;<i class="icon-arrow-right"></i></a>
-          </div>
-        </div>
         <hr>
         <div class="text-center padding-top-3x mb-30">
           <h2>Our Core Team</h2>

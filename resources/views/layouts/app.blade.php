@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Title|Company Name
+    <title>E-xact Digital Print Media
     </title>
     <!-- SEO Meta Tags-->
     <meta name="description" content="">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" media="screen" href="{{asset('template/css/vendor.min.css')}}">
     <!-- Main Template Styles-->
     <link id="mainStyles" rel="stylesheet" media="screen" href="{{asset('template/css/styles.min.css')}}">
+    <link rel="stylesheet" media="screen" href="{{asset('template/css/main.css')}}">
     <!-- Modernizr-->
     <script src="{{asset('template/js/modernizr.min.js')}}"></script>
   </head>
@@ -94,28 +95,57 @@
     <header class="navbar navbar-sticky">
       <div class="site-branding">
         <div class="inner">
-          <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a>
+          {{-- <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a> --}}
           <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
           <!-- Site Logo--><a class="site-logo" href="{{url('/')}}"><img src="" alt="Title|Company"></a>
         </div>
       </div>
       <!-- Main Navigation-->
-      <nav class="site-menu">
+        <nav class="site-menu">
         <ul>
+        @if(\Request::is('home'))
           <li class="active"><a href="{{url('/')}}"><span>Home</span></a>
           </li>
-          <li><a href="{{url('/aboutUs')}}"><span>ABOUT US</span></a>
+        @else
+          <li class=""><a href="{{url('/')}}"><span>Home</span></a>
           </li>
-          <li class=""><a href="{{url('/faq')}}"><span>FAQ</span></span></a>
+        @endif
+        @if(\Request::is('aboutUs'))
+          <li class="active"><a href="{{url('/aboutUs')}}"><span>ABOUT US</span></a>
           </li>
-          <li><a href="{{url('/blog')}}"><span>BLOG</span></a>
+        @else
+        <li class=""><a href="{{url('/aboutUs')}}"><span>ABOUT US</span></a>
+          </li>
+        @endif
+        @if(\Request::is('faq'))
+          <li class="active"><a href="{{url('/faq')}}"><span>FAQ</span></span></a>
+          </li>
+        @else
+        <li class=""><a href="{{url('/faq')}}"><span>FAQ</span></span></a>
+          </li>
+        @endif
+        @if(\Request::is('blog'))
+          <li class="active"><a href="{{url('/blog')}}"><span>BLOG</span></a>
             <ul class="sub-menu">
                 <li><a href="">SOMETHING</a></li>
                 <li><a href="">SOMETHING</a></li>
             </ul>
           </li>
-          <li><a href="{{url('/contactUs')}}"><span>CONTACT US</span></a>
+        @else
+        <li><a href="{{url('/blog')}}"><span>BLOG</span></a>
+            <ul class="sub-menu">
+                <li><a href="">SOMETHING</a></li>
+                <li><a href="">SOMETHING</a></li>
+            </ul>
           </li>
+        @endif
+        @if(\Request::is('contactUs'))
+          <li class="active"><a href="{{url('/contactUs')}}"><span>CONTACT US</span></a>
+          </li>
+        @else
+        <li><a href="{{url('/contactUs')}}"><span>CONTACT US</span></a>
+          </li>
+        @endif
           <li class="has-megamenu"><a href="{{url('/products_and_services')}}"><span>PRODUCTS AND SERVICES</span></a>
             <ul class="mega-menu">
               <li><span class="mega-menu-title">PRODUCT 1</span>
@@ -132,7 +162,7 @@
               </li>
             </ul>
           </li>
-          <li><a href="#"><span>SPECIAL OFFER</span></a>
+          <li><a href="{{url('/special_offers')}}"><span>SPECIAL OFFER</span></a>
           </li>
         </ul>
       </nav>
@@ -175,7 +205,7 @@
           </div>
           <hr class="hr-light mt-2 margin-bottom-2x">
           <!-- Copyright-->
-          <p class="footer-copyright">© All rights reserved. COMPANY NAME</p>
+          <p class="footer-copyright">© All rights reserved. E-xact Digital Print Media</p>
         </div>
       </footer>
     </div>

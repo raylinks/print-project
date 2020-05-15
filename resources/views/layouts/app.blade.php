@@ -92,7 +92,7 @@
     </div>
     <!-- Navbar-->
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-    <header class="navbar navbar-sticky">
+    <header class="navbar navbar-sticky navbar-ghost">
       <div class="site-branding">
         <div class="inner">
           {{-- <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a> --}}
@@ -215,5 +215,6 @@
     <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
     <script src="{{asset('template/js/vendor.min.js')}}"></script>
     <script src="{{asset('template/js/scripts.min.js')}}"></script>
+    <script src="{{asset('template/js/main.js')}}"></script>
   </body>
 </html>

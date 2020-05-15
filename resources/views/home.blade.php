@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- Main Slider-->
-      <section class="hero-slider" style="background-image: url({{asset('template/images/main-bg.jpg')}});">
+      <section class="hero-slider" style="background-image: url({{asset('template/images/bg-images/background3.jpeg')}});">
         <div class="owl-carousel large-controls dots-inside" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 7000 }">
           <div class="item">
             <div class="container padding-top-3x">
@@ -9,8 +9,8 @@
                 <div class="col-lg-5 col-md-6 padding-bottom-2x text-md-left text-center">
                   <div class="from-bottom">
                       {{-- <img class="d-inline-block w-150 mb-4" src="img/hero-slider/logo02.png" alt="Puma"> --}}
-                    <div class="h2 text-body text-normal mb-2 pt-1">Logo Creation</div>
-                    <div class="h2 text-body text-normal mb-4 pb-1">Coporate and Brochure Design</div>
+                    <div class="h2 text-body text-white text-bold mb-2 pt-1">Logo Creation</div>
+                    <div class="h2 text-body text-white text-bold mb-4 pb-1">Coporate and Brochure Design</div>
                   </div><a class="btn btn-primary scale-up delay-1" href="shop-grid-ls.html">View Projects</a>
                 </div>
                 <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="{{asset('template/images/2.jpeg')}}" alt="Puma Backpack"></div>
@@ -23,8 +23,8 @@
                 <div class="col-lg-5 col-md-6 padding-bottom-2x text-md-left text-center">
                   <div class="from-bottom">
                       {{-- <img class="d-inline-block w-150 mb-4" src="img/hero-slider/logo02.png" alt="Puma"> --}}
-                    <div class="h2 text-body text-normal mb-2 pt-1">Office Branding</div>
-                    <div class="h2 text-body text-normal mb-4 pb-1">Flyers and Posters</div>
+                    <div class="h2 text-body text-white text-bold mb-2 pt-1">Office Branding</div>
+                    <div class="h2 text-body text-white text-bold mb-4 pb-1">Flyers and Posters</div>
                   </div><a class="btn btn-primary scale-up delay-1" href="shop-grid-ls.html">View Projects</a>
                 </div>
                 <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="{{asset('template/images/16.jpeg')}}" alt="Puma Backpack"></div>
@@ -37,8 +37,8 @@
                 <div class="col-lg-5 col-md-6 padding-bottom-2x text-md-left text-center">
                   <div class="from-bottom">
                       {{-- <img class="d-inline-block w-150 mb-4" src="img/hero-slider/logo02.png" alt="Puma"> --}}
-                    <div class="h2 text-body text-normal mb-2 pt-1">High Premium</div>
-                    <div class="h2 text-body text-normal mb-4 pb-1">Banner and Stands</div>
+                    <div class="h2 text-body text-white text-bold mb-2 pt-1">High Premium</div>
+                    <div class="h2 text-body text-white text-bold mb-4 pb-1">Banner and Stands</div>
                   </div><a class="btn btn-primary scale-up delay-1" href="shop-grid-ls.html">View Projects</a>
                 </div>
                 <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="{{asset('template/images/14.jpeg')}}" alt="Puma Backpack"></div>

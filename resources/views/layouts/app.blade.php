@@ -87,7 +87,7 @@
     </div>
     <!-- Topbar-->
     <div class="topbar">
-      <div class="topbar-column"><a class="hidden-md-down" href="mailto:"><i class="icon-mail"></i>&nbsp; company email</a><a class="hidden-md-down" href="tel:"><i class="icon-bell"></i>&nbsp; company number</a><a class="social-button sb-facebook shape-none sb-dark" href="#" target="_blank"><i class="socicon-facebook"></i></a><a class="social-button sb-twitter shape-none sb-dark" href="#" target="_blank"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram shape-none sb-dark" href="#" target="_blank"><i class="socicon-instagram"></i></a><a class="social-button sb-pinterest shape-none sb-dark" href="#" target="_blank"><i class="socicon-pinterest"></i></a>
+      <div class="topbar-column"><a class="hidden-md-down" href="mailto:"><i class="icon-mail"></i>&nbsp; company email</a><a class="hidden-md-down" href="tel:"><i class="icon-bell"></i>&nbsp; +234 802 600 0690</a><a class="social-button sb-facebook shape-none sb-dark" href="#" target="_blank"><i class="socicon-facebook"></i></a><a class="social-button sb-twitter shape-none sb-dark" href="#" target="_blank"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram shape-none sb-dark" href="#" target="_blank"><i class="socicon-instagram"></i></a><a class="social-button sb-pinterest shape-none sb-dark" href="#" target="_blank"><i class="socicon-pinterest"></i></a>
       </div>
     </div>
     <!-- Navbar-->
@@ -181,7 +181,7 @@
               <!-- Contact Info-->
               <section class="widget widget-light-skin">
                 <h3 class="widget-title">Get In Touch With Us</h3>
-                <p class="text-white">Phone: COMPANY NUMBER</p>
+                <p class="text-white">Phone: +234 802 600 0690</p>
                 <ul class="list-unstyled text-sm text-white">
                   <li><span class="opacity-50">Monday-Friday:</span>9.00 am - 5.00 pm</li>
                   <li><span class="opacity-50">Saturday:</span>10.00 am - 3.00 pm</li>
@@ -213,8 +213,8 @@
     <!-- Backdrop-->
     <div class="site-backdrop"></div>
     <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="{{asset('template/js/main.js')}}"></script>
     <script src="{{asset('template/js/vendor.min.js')}}"></script>
     <script src="{{asset('template/js/scripts.min.js')}}"></script>
-    <script src="{{asset('template/js/main.js')}}"></script>
   </body>
 </html>

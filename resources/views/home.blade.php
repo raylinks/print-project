@@ -13,7 +13,7 @@
                     <div class="h2 text-body text-normal mb-4 pb-1">Coporate and Brochure Design</div>
                   </div><a class="btn btn-primary scale-up delay-1" href="shop-grid-ls.html">View Projects</a>
                 </div>
-                <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="{{asset('template/images/8.jpeg')}}" alt="Puma Backpack"></div>
+                <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="{{asset('template/images/2.jpeg')}}" alt="Puma Backpack"></div>
               </div>
             </div>
           </div>

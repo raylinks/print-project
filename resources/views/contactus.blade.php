@@ -24,25 +24,14 @@
           </div>
           <div class="col-md-5">
             <ul class="list-icon">
-              <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:customer.service@unishop.com">customer.service@unishop.com</a></li>
-              <li> <i class="icon-bell"></i>+1(080) 44 357 260</li>
-              <li> <i class="icon-clock"></i>1 - 2 business days</li>
+              <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:customer.service@unishop.com">company mail</a></li>
+              <li> <i class="icon-bell"></i>+234 802 600 0690</li>
+              <li> <i class="icon-clock"></i>+234 909 495 5241</li>
             </ul>
           </div>
         </div>
         <hr class="margin-top-2x">
-        <div class="row margin-top-2x">
-          <div class="col-md-7">
-            <div class="display-3 text-muted opacity-75 mb-30">Tech Support</div>
-          </div>
-          <div class="col-md-5">
-            <ul class="list-icon">
-              <li> <i class="icon-mail"></i><a class="navi-link" href="mailto:support@unishop.com">support@unishop.com</a></li>
-              <li> <i class="icon-bell"></i>00 33 169 7720</li>
-              <li> <i class="icon-clock"></i>1 - 2 business days</li>
-            </ul>
-          </div>
-        </div>
+
         <h3 class="margin-top-3x text-center mb-30">Outlet Stores</h3>
         <div class="row">
           <div class="col-md-4 col-sm-6">

@@ -9,6 +9,8 @@
     <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
     <!-- Mobile Specific Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" type="image/jpeg" href="{{asset('template/images/bg-images/logo.jpeg')}}">
     <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
     <link rel="stylesheet" media="screen" href="{{asset('template/css/vendor.min.css')}}">
     <!-- Main Template Styles-->
@@ -87,17 +89,17 @@
     </div>
     <!-- Topbar-->
     <div class="topbar">
-      <div class="topbar-column"><a class="hidden-md-down" href="mailto:"><i class="icon-mail"></i>&nbsp; company email</a><a class="hidden-md-down" href="tel:"><i class="icon-bell"></i>&nbsp; company number</a><a class="social-button sb-facebook shape-none sb-dark" href="#" target="_blank"><i class="socicon-facebook"></i></a><a class="social-button sb-twitter shape-none sb-dark" href="#" target="_blank"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram shape-none sb-dark" href="#" target="_blank"><i class="socicon-instagram"></i></a><a class="social-button sb-pinterest shape-none sb-dark" href="#" target="_blank"><i class="socicon-pinterest"></i></a>
+      <div class="topbar-column"><a class="hidden-md-down" href="mailto:"><i class="icon-mail"></i>&nbsp; company email</a><a class="hidden-md-down" href="tel:"><i class="icon-bell"></i>&nbsp; +234 802 600 0690</a><a class="social-button sb-facebook shape-none sb-dark" href="#" target="_blank"><i class="socicon-facebook"></i></a><a class="social-button sb-twitter shape-none sb-dark" href="#" target="_blank"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram shape-none sb-dark" href="#" target="_blank"><i class="socicon-instagram"></i></a><a class="social-button sb-pinterest shape-none sb-dark" href="#" target="_blank"><i class="socicon-pinterest"></i></a>
       </div>
     </div>
     <!-- Navbar-->
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
-    <header class="navbar navbar-sticky">
+    <header class="navbar navbar-sticky navbar-ghost">
       <div class="site-branding">
         <div class="inner">
           {{-- <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a> --}}
           <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
-          <!-- Site Logo--><a class="site-logo" href="{{url('/')}}"><img src="" alt="Title|Company"></a>
+          <!-- Site Logo--><a class="site-logo" href="{{url('/')}}"><img src="{{asset('template/images/bg-images/logo.jpeg')}}" alt="Title|Company"></a>
         </div>
       </div>
       <!-- Main Navigation-->
@@ -181,7 +183,7 @@
               <!-- Contact Info-->
               <section class="widget widget-light-skin">
                 <h3 class="widget-title">Get In Touch With Us</h3>
-                <p class="text-white">Phone: COMPANY NUMBER</p>
+                <p class="text-white">Phone: +234 802 600 0690</p>
                 <ul class="list-unstyled text-sm text-white">
                   <li><span class="opacity-50">Monday-Friday:</span>9.00 am - 5.00 pm</li>
                   <li><span class="opacity-50">Saturday:</span>10.00 am - 3.00 pm</li>
@@ -213,6 +215,7 @@
     <!-- Backdrop-->
     <div class="site-backdrop"></div>
     <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="{{asset('template/js/main.js')}}"></script>
     <script src="{{asset('template/js/vendor.min.js')}}"></script>
     <script src="{{asset('template/js/scripts.min.js')}}"></script>
   </body>

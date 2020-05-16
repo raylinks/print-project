@@ -9,6 +9,8 @@
     <meta name="keywords" content="shop, e-commerce, modern, flat style, responsive, online store, business, mobile, blog, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
     <!-- Mobile Specific Meta Tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" type="image/jpeg" href="{{asset('template/images/bg-images/logo.jpeg')}}">
     <!-- Vendor Styles including: Bootstrap, Font Icons, Plugins, etc.-->
     <link rel="stylesheet" media="screen" href="{{asset('template/css/vendor.min.css')}}">
     <!-- Main Template Styles-->
@@ -97,7 +99,7 @@
         <div class="inner">
           {{-- <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a> --}}
           <!-- Off-Canvas Toggle (#mobile-menu)--><a class="offcanvas-toggle menu-toggle" href="#mobile-menu" data-toggle="offcanvas"></a>
-          <!-- Site Logo--><a class="site-logo" href="{{url('/')}}"><img src="" alt="Title|Company"></a>
+          <!-- Site Logo--><a class="site-logo" href="{{url('/')}}"><img src="{{asset('template/images/bg-images/logo.jpeg')}}" alt="Title|Company"></a>
         </div>
       </div>
       <!-- Main Navigation-->

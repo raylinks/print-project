@@ -31,7 +31,37 @@
           </div>
         </div>
         <hr class="margin-top-2x">
-
+        <h3 class="padding-top-2x">Email Us.</h3>
+            <p class="text-muted mb-30">We normally respond within 2 business days.</p>
+            <form class="row" method="post">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="help_name">Your Name</label>
+                  <input class="form-control form-control-rounded" type="text" id="help_name" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="help_email">Your Email</label>
+                  <input class="form-control form-control-rounded" type="email" id="help_email" required>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="help_subject">Subject</label>
+                  <input class="form-control form-control-rounded" type="text" id="help_subject" required>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <label for="help_question">Question </label>
+                  <textarea class="form-control form-control-rounded" id="help_question" rows="8" required></textarea>
+                </div>
+              </div>
+              <div class="col-12 text-right">
+                <button class="btn btn-primary btn-rounded" type="submit">Submit Question</button>
+              </div>
+            </form>
         <h3 class="margin-top-3x text-center mb-30">Outlet Stores</h3>
         <div class="row">
           <div class="col-md-4 col-sm-6">

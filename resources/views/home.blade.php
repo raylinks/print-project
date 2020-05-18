@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <!-- Main Slider-->
-      <section class="hero-slider pt-3" style="background-image: url({{asset('template/images/bg-images/background3.jpeg')}});">
+      <section class="hero-slider pt-3" style="background-color: #032041;">
         <div class="owl-carousel large-controls dots-inside" data-owl-carousel="{ &quot;nav&quot;: true, &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 7000 }">
           <div class="item">
             <div class="container padding-top-3x">

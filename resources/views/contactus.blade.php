@@ -8,7 +8,7 @@
           </div>
           <div class="column">
             <ul class="breadcrumbs">
-              <li><a href="index.html">Home</a>
+              <li><a href="{{url('/')}}">Home</a>
               </li>
               <li class="separator">&nbsp;</li>
               <li>Contacts</li>

@@ -21,6 +21,7 @@
   </head>
   <!-- Body-->
   <body>
+    @include('inc.modalcreate')
     <!-- Off-Canvas Category Menu-->
     <div class="offcanvas-container" id="shop-categories">
       <div class="offcanvas-header">
@@ -28,28 +29,32 @@
       </div>
       <nav class="offcanvas-menu">
         <ul class="menu">
-          <li class=""><span><a href="#">HOME</a><span class="sub-menu-toggle"></span></span>
+          <li class=""><span><a href="{{url('/')}}">HOME</a><span class="sub-menu-toggle"></span></span>
           </li>
-          <li class=""><span><a href="#">ABOUT US</a><span class="sub-menu-toggle"></span></span>
+          <li class=""><span><a href="{{url('/aboutUs')}}">ABOUT US</a><span class="sub-menu-toggle"></span></span>
           </li>
-          <li class=""><span><a href="#">FAQ</a><span class="sub-menu-toggle"></span></span>
+          <li class=""><span><a href="{{url('/faq')}}">FAQ</a><span class="sub-menu-toggle"></span></span>
           </li>
-          <li class="has-children"><span><a href="#">BLOG</a><span class="sub-menu-toggle"></span></span>
-            <ul class="offcanvas-submenu">
+          <li class="has-children"><span><a href="{{url('/blog')}}">BLOG</a><span class="sub-menu-toggle"></span></span>
+            {{-- <ul class="offcanvas-submenu">
               <li><a href="#">SOMETHING</a></li>
               <li><a href="#">MORE SOMETHING</a></li>
-            </ul>
+            </ul> --}}
           </li>
-          <li class=""><span><a href="#">CONTACT US</a><span class="sub-menu-toggle"></span></span>
+          <li class=""><span><a href="{{url('/contactUs')}}">CONTACT US</a><span class="sub-menu-toggle"></span></span>
           </li>
-          <li class="has-children"><span><a href="#">PROSUCT AND SERVICES</a><span class="sub-menu-toggle"></span></span>
+          <li class="has-children"><span><a href="{{url('/products_and_services')}}">PRODUCT AND SERVICES</a><span class="sub-menu-toggle"></span></span>
             <ul class="offcanvas-submenu">
-              <li><a href="#">Something</a></li>
-              <li><a href="#">Something</a></li>
-              <li><a href="#">Something</a></li>
+              <li><a href="#">COPORATE BRANDING</a></li>
+              <li><a href="#">LOGO DESIGN</a></li>
+              <li><a href="#">OFFICE BRANDING</a></li>
+              <li><a href="#">ROLL UP BANNERS</a></li>
+              <li><a href="#">FLYING FLAG BANNERS</a></li>
+              <li><a href="#">FLYERS BROCHURES </a></li>
+              <li><a href="#">POSTERS</a></li>
             </ul>
           </li>
-          <li class=""><span><a href="#">SPECIAL OFFERS</a><span class="sub-menu-toggle"></span></span>
+          <li class=""><span><a href="{{url('/special_offers')}}">SPECIAL OFFERS</a><span class="sub-menu-toggle"></span></span>
           </li>
         </ul>
       </nav>
@@ -61,28 +66,32 @@
       </div>
       <nav class="offcanvas-menu">
         <ul class="menu">
-          <li class=""><span><a href="#">HOME</a><span class="sub-menu-toggle"></span></span>
+          <li class=""><span><a href="{{url('/')}}">HOME</a><span class="sub-menu-toggle"></span></span>
           </li>
-          <li class=""><span><a href="#">ABOUT US</a><span class="sub-menu-toggle"></span></span>
+          <li class=""><span><a href="{{url('/aboutUs')}}">ABOUT US</a><span class="sub-menu-toggle"></span></span>
           </li>
-          <li class=""><span><a href="#">FAQ</a><span class="sub-menu-toggle"></span></span>
+          <li class=""><span><a href="{{url('/faq')}}">FAQ</a><span class="sub-menu-toggle"></span></span>
           </li>
-          <li class="has-children"><span><a href="#">BLOG</a><span class="sub-menu-toggle"></span></span>
-            <ul class="offcanvas-submenu">
+          <li class="has-children"><span><a href="{{url('/blog')}}">BLOG</a><span class="sub-menu-toggle"></span></span>
+            {{-- <ul class="offcanvas-submenu">
               <li><a href="#">SOMETHING</a></li>
               <li><a href="#">MORE SOMETHING</a></li>
+            </ul> --}}
+          </li>
+          <li class=""><span><a href="{{url('/contactUs')}}">CONTACT US</a><span class="sub-menu-toggle"></span></span>
+          </li>
+          <li class="has-children"><span><a href="{{url('/products_and_services')}}">PRODUCTs AND SERVICES</a><span class="sub-menu-toggle"></span></span>
+             <ul class="offcanvas-submenu">
+              <li><a href="#">COPORATE BRANDING</a></li>
+              <li><a href="#">LOGO DESIGN</a></li>
+              <li><a href="#">OFFICE BRANDING</a></li>
+              <li><a href="#">ROLL UP BANNERS</a></li>
+              <li><a href="#">FLYING FLAG BANNERS</a></li>
+              <li><a href="#">FLYERS BROCHURES </a></li>
+              <li><a href="#">POSTERS</a></li>
             </ul>
           </li>
-          <li class=""><span><a href="#">CONTACT US</a><span class="sub-menu-toggle"></span></span>
-          </li>
-          <li class="has-children"><span><a href="#">PRODUCTs AND SERVICES</a><span class="sub-menu-toggle"></span></span>
-            <ul class="offcanvas-submenu">
-              <li><a href="#">Something</a></li>
-              <li><a href="#">Something</a></li>
-              <li><a href="#">Something</a></li>
-            </ul>
-          </li>
-          <li class=""><span><a href="#">SPECIAL OFFERS</a><span class="sub-menu-toggle"></span></span>
+          <li class=""><span><a href="{{url('/special_offers')}}">SPECIAL OFFERS</a><span class="sub-menu-toggle"></span></span>
           </li>
         </ul>
       </nav>
@@ -128,17 +137,17 @@
         @endif
         @if(\Request::is('blog'))
           <li class="active"><a href="{{url('/blog')}}"><span>BLOG</span></a>
-            <ul class="sub-menu">
+            {{-- <ul class="sub-menu">
                 <li><a href="">SOMETHING</a></li>
                 <li><a href="">SOMETHING</a></li>
-            </ul>
+            </ul> --}}
           </li>
         @else
         <li><a href="{{url('/blog')}}"><span>BLOG</span></a>
-            <ul class="sub-menu">
+            {{-- <ul class="sub-menu">
                 <li><a href="">SOMETHING</a></li>
                 <li><a href="">SOMETHING</a></li>
-            </ul>
+            </ul> --}}
           </li>
         @endif
         @if(\Request::is('contactUs'))
@@ -150,16 +159,30 @@
         @endif
           <li class="has-megamenu"><a href="{{url('/products_and_services')}}"><span>PRODUCTS AND SERVICES</span></a>
             <ul class="mega-menu">
-              <li><span class="mega-menu-title">PRODUCT 1</span>
+              <li><span class="mega-menu-title">COPORATE BRANDING</span>
                   <ul class="sub-menu">
-                    <li><a href="">something </a></li>
-                    <li><a href="">something </a></li>
-                    <li><a href="">something </a></li>
+                    <li><a href="">BRAND IDENTITY DESIGN </a></li>
+                    <li><a href="">LOGO DESIGN </a></li>
+                    <li><a href="">WEB DESIGN </a></li>
+                    <li><a href="">BRANDED COPORATE GIFTS </a></li>
+                    <li><a href="">OFICE BRANDING</a></li>
                   </ul>
               </li>
-              <li><span class="mega-menu-title">PRODUCT 2</span>
+              <li><span class="mega-menu-title">GENERAL PRODUCTS</span>
                   <ul class="sub-menu">
-                    <li><a href="">something</a></li>
+                    <li><a href="">QUICK DIGITAL PRINTING</a></li>
+                    <li><a href="">BUSINESS CARDS PRINTING</a></li>
+                    <li><a href="">FLYERS BROCHURES AND POSTERS</a></li>
+                    <li><a href="">STATIONARY PRINTING</a></li>
+                    <li><a href="">STAMPS AND SEALS</a></li>
+                  </ul>
+              </li>
+              <li><span class="mega-menu-title">DIGITAL DISPLAY BANNERS</span>
+                  <ul class="sub-menu">
+                    <li><a href="">ROLL UP BANNERS</a></li>
+                    <li><a href="">POP UP BANNERS</a></li>
+                    <li><a href="">LARGE FORMAL PRINTING</a></a></li>
+                    <li><a href="">FYING FLAG BANNERS</a></li>
                   </ul>
               </li>
             </ul>
@@ -174,6 +197,8 @@
     <!-- Off-Canvas Wrapper-->
     <div class="offcanvas-wrapper">
       <!-- Page Content-->
+      {{-- @include('inc.notifications') --}}
+      @include('inc.messages')
       @yield('content')
       <!-- Site Footer-->
       <footer class="site-footer">

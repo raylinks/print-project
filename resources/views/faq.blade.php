@@ -8,7 +8,7 @@
           </div>
           <div class="column">
             <ul class="breadcrumbs">
-              <li><a href="index.html">Home</a>
+              <li><a href="{{url('/')}}">Home</a>
               </li>
               <li class="separator">&nbsp;</li>
               <li>Help / FAQ</li>
@@ -41,90 +41,7 @@
                   <div class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-header" role="tab">
-                  <h6><a class="collapsed" href="#collapseThree" data-toggle="collapse">Do you ship internationally?</a></h6>
-                </div>
-                <div class="collapse" id="collapseThree" data-parent="#accordion" role="tabpanel">
-                  <div class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" role="tab">
-                  <h6><a class="collapsed" href="#collapseFour" data-toggle="collapse">Do I need an account to place an order?</a></h6>
-                </div>
-                <div class="collapse" id="collapseFour" data-parent="#accordion" role="tabpanel">
-                  <div class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" role="tab">
-                  <h6><a class="collapsed" href="#collapseFive" data-toggle="collapse">Do you have discounts for returning customers?</a></h6>
-                </div>
-                <div class="collapse" id="collapseFive" data-parent="#accordion" role="tabpanel">
-                  <div class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" role="tab">
-                  <h6><a class="collapsed" href="#collapseSix" data-toggle="collapse">How can I track my order?</a></h6>
-                </div>
-                <div class="collapse" id="collapseSix" data-parent="#accordion" role="tabpanel">
-                  <div class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-header" role="tab">
-                  <h6><a class="collapsed" href="#collapseSeven" data-toggle="collapse">What are the product refund conditions?</a></h6>
-                </div>
-                <div class="collapse" id="collapseSeven" data-parent="#accordion" role="tabpanel">
-                  <div class="card-body">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-                </div>
-              </div>
             </div>
-            <h3 class="padding-top-2x">Haven't found the answer? Ask us.</h3>
-            <p class="text-muted mb-30">We normally respond within 2 business days. Most popular questions will appear on this page.</p>
-            <form class="row" method="post">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="help_name">Your Name</label>
-                  <input class="form-control form-control-rounded" type="text" id="help_name" required>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="help_email">Your Email</label>
-                  <input class="form-control form-control-rounded" type="email" id="help_email" required>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="help_subject">Subject</label>
-                  <input class="form-control form-control-rounded" type="text" id="help_subject" required>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="help_category">Category</label>
-                  <select class="form-control form-control-rounded" id="help_category">
-                    <option>Account Management</option>
-                    <option>Refund Policy</option>
-                    <option>Payment Procedure</option>
-                    <option>Shipping Info</option>
-                    <option>Referral Program</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-12">
-                <div class="form-group">
-                  <label for="help_question">Question </label>
-                  <textarea class="form-control form-control-rounded" id="help_question" rows="8" required></textarea>
-                </div>
-              </div>
-              <div class="col-12 text-right">
-                <button class="btn btn-primary btn-rounded" type="submit">Submit Question</button>
-              </div>
-            </form>
           </div>
         </div>
       </div>

@@ -8,7 +8,7 @@
           </div>
           <div class="column">
             <ul class="breadcrumbs">
-              <li><a href="index.html">Home</a>
+              <li><a href="{{url('/')}}">Home</a>
               </li>
               <li class="separator">&nbsp;</li>
               <li>About Us</li>
@@ -19,7 +19,7 @@
       <!-- Page Content-->
       <div class="container padding-bottom-2x mb-2">
         <div class="row align-items-center padding-bottom-2x">
-          <div class="col-md-5"><img class="d-block w-270 m-auto" src="img/features/01.jpg" alt="Online Shopping"></div>
+          <div class="col-md-5"><img class="d-block w-270 m-auto" src="{{asset('template/images/bg-images/logo.jpeg')}}" alt="Online Shopping"></div>
           <div class="col-md-7 text-md-left text-center">
             <div class="mt-30 hidden-md-up"></div>
             <h2>Who Are We?</h2>
@@ -30,7 +30,7 @@ With our comprehensive knowledge of print methodologies we offer our client inno
         </div>
         <hr>
         <hr>
-        <div class="text-center padding-top-3x mb-30">
+        {{-- <div class="text-center padding-top-3x mb-30">
           <h2>Our Core Team</h2>
           <p class="text-muted">People behind your awesome shopping experience.</p>
         </div>
@@ -55,7 +55,7 @@ With our comprehensive knowledge of print methodologies we offer our client inno
             <p class="text-muted mb-2">Lead Designer</p>
             <div class="social-bar"><a class="social-button shape-circle sb-behance" href="#" data-toggle="tooltip" data-placement="top" title="Behance"><i class="socicon-behance"></i></a><a class="social-button shape-circle sb-dribbble" href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="socicon-dribbble"></i></a><a class="social-button shape-circle sb-instagram" href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="socicon-instagram"></i></a></div>
           </div>
-        </div>
+        </div> --}}
       </div>
 
 @endsection

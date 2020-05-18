@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+
 .btn {
     background-color: #0276ff;
     border-radius: 5px;

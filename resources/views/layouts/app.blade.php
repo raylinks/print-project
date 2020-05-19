@@ -62,7 +62,7 @@
     <!-- Off-Canvas Mobile Menu-->
     <div class="offcanvas-container" id="mobile-menu">
       <div class="offcanvas-header">
-        <h3 class="offcanvas-title">WELCOME TO SOMETHING PRINT</h3>
+        <h3 class="offcanvas-title">WELCOME TO E-xact Print Media</h3>
       </div>
       <nav class="offcanvas-menu">
         <ul class="menu">
@@ -98,7 +98,20 @@
     </div>
     <!-- Topbar-->
     <div class="topbar">
-      <div class="topbar-column"><a class="hidden-md-down" href="mailto:"><i class="icon-mail"></i>&nbsp; company email</a><a class="hidden-md-down" href="tel:"><i class="icon-bell"></i>&nbsp; +234 802 600 0690</a><a class="social-button sb-facebook shape-none sb-dark" href="#" target="_blank"><i class="socicon-facebook"></i></a><a class="social-button sb-twitter shape-none sb-dark" href="#" target="_blank"><i class="socicon-twitter"></i></a><a class="social-button sb-instagram shape-none sb-dark" href="#" target="_blank"><i class="socicon-instagram"></i></a><a class="social-button sb-pinterest shape-none sb-dark" href="#" target="_blank"><i class="socicon-pinterest"></i></a>
+      <div class="topbar-column col-md-6"><img class="d-block w-270 m-auto" style="float: left;" src="{{asset('template/images/bg-images/logo.jpeg')}}" alt="Online Shopping"></div>
+      <div class="topbar-column col-md-6">
+        <a class="hidden-md-down" href="mailto:">
+            <i class="icon-mail"></i>
+            &nbsp; company email
+        </a>
+        <a class="hidden-md-down" href="tel:">
+            <i class="icon-bell"></i>
+            &nbsp; +234 802 600 0690
+        </a>
+         <form class="input-group form-group search-input" method="get"><span class="input-group-btn">
+                    <button type="submit"><i class="icon-search"></i></button></span>
+                  <input class="form-control" type="search" placeholder="Search site">
+         </form>
       </div>
     </div>
     <!-- Navbar-->
@@ -228,6 +241,18 @@
                   {{-- <li><a href="#">Our Blog</a></li> --}}
                 </ul>
               </section>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <section class="widget widget-tags">
+                    <h3 class="widget-title">Product Tags</h3>
+                   @if (count($products) > 0)
+                        @foreach ($products as $product)
+                            <a class="tag" href="/product/?tag={{$product->title}}">{{$product->title}}</a>
+                        @endforeach
+                   @else
+                    <p></p>
+                   @endif
+                </section>
             </div>
           </div>
           <hr class="hr-light mt-2 margin-bottom-2x">

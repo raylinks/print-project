@@ -16,7 +16,48 @@ a.btn-primary {
     color: white;
 }
 
+a.tag {
+    background-color: transparent;
+    color: white;
+}
+
 h2,
 .h2 {
     font-size: 50px;
+}
+
+
+.header-hide {
+    position: relative;
+    margin-top: 70px;
+}
+
+.header-hide img {
+    display: none;
+}
+
+
+.header-other-page img {
+    display: none;
+}
+
+.header-other-page-2 img {
+    display: block;
+}
+
+
+@media screen and (max-width : 480px) {
+    .header-hide {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width : 320px) {
+    .header-hide {
+        margin-top: 25px;
+    }
+
+    .search-input {
+        margin-top: 9px;
+    }
 }

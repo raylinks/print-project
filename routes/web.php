@@ -33,11 +33,18 @@ Route::get('/contactUs', function () {
     return view('contactus');
 });
 
+Route::get('/product', function (Request $request) {
+    $query = $request->query('tag');
+    // dd($query);
+    $result = Product::where('title', $query)->first();
+    return redirect(route('single', ['id' => $result->id]));
+});
+
 Route::get('/single/{id}', function (Request $request, $id) {
     $product = Product::where('id', $id)->with('images')->first();
     // dd($product);
     return view('product')->with('product', $product);
-});
+})->name('single');
 
 
 Route::get('/admin', 'AdminController@index');

@@ -47,6 +47,17 @@
           </div>
         </div>
       </section>
+      <section class="container padding-top-3x padding-bottom-3x">
+          <h2 class="text-center text-bold mb-30">WELCOME TO E-XACT PRINTING MEDIA</h2>
+          <div class="row">
+              <div class="col-md-12">
+                  <p class="text-center h3">
+                    E-xact is Nigeria’s most innovative Printing and Branding Company based in Lagos, Nigeria; duly registered  with CAC as E-xact Global Media Services Rec (2897132) . Our designs are brilliant and our prints, very exclusive. We offer full range of printing and branding services to a wide range of clients operating across different industry sectors all across Nigeria and beyond. E-xact is a One stop shop for all your printing needs; our custom made solutions are tailored specifically to meet your peculiar needs ensuring the best output throughout the process. Join our happy customers who made E-xact their most preferred printing destination in Nigeria. Let us earn your loyalty, give us a trial Today.
+Our project timeline is as important to us as our delivering excellence in print.  From the design and print of Business Cards, Corporate Stationary, Display Banners, Signs and Displays, Stamps and Seals, Marketing Materials to the Branding of Vehicles, Clothing, Gifts and Souvenirs, we provide quality finishing using our cutting-edge printing technology.”
+                  </p>
+              </div>
+          </div>
+      </section>
             <!-- Featured Products Carousel-->
       <section class="container padding-top-3x padding-bottom-3x" id="products">
         <h3 class="text-center mb-30">Products and Services</h3>

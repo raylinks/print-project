@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
+use App\Product;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -16,6 +17,11 @@ class AppServiceProvider extends ServiceProvider
     {
         //
         Schema::defaultStringLength(191);
+
+        view()->composer('layouts.app', function ($view) {
+            $products = Product::all();
+            $view->with('products', $products);
+        });
     }
 
     /**

@@ -37,7 +37,7 @@
               <ul class="product-thumbnails">
                   <p style="display: none;">{{$count = 0}}</p>
                     @foreach ($product->images as $image)
-                        <li class="active"><a href="#{{$count++}}"><img src="/storage/image/{{$image->name}}" alt="Product"></a></li>
+                        <li class="{{$countH == $count ? "active" : ""}}"><a href="#{{$count++}}"><img src="/storage/image/{{$image->name}}" alt="Product"></a></li>
                     @endforeach
               </ul>
             </div>

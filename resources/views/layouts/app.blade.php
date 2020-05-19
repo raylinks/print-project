@@ -201,7 +201,7 @@
       @include('inc.messages')
       @yield('content')
       <!-- Site Footer-->
-      <footer class="site-footer">
+      <footer class="site-footer" style="background-color: #032041;">
         <div class="container">
           <div class="row">
             <div class="col-lg-3 col-md-6">
@@ -221,11 +221,11 @@
               <section class="widget widget-links widget-light-skin">
                 <h3 class="widget-title">About Us</h3>
                 <ul>
-                  <li><a href="#">Careers</a></li>
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Contact Us</a></li>
+                  {{-- <li><a href="#">Careers</a></li> --}}
+                  <li><a href="{{url('aboutUs')}}">About Us</a></li>
+                  <li><a href="{{url('contactUs')}}">Contact Us</a></li>
                   <li><a href="#">Services</a></li>
-                  <li><a href="#">Our Blog</a></li>
+                  {{-- <li><a href="#">Our Blog</a></li> --}}
                 </ul>
               </section>
             </div>

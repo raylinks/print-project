@@ -27,6 +27,26 @@
 
 With our comprehensive knowledge of print methodologies we offer our client innovative way of idea conceptualization, design generation and print planning arrangement which provide for professional and efficient handling of all printing jobs. If you are looking for a Professional Printing and Branding Company based in Nigeria, look no further, E-xact print is the No. 1 printing destination for all quality print lovers in Nigeria.  </p><a class="text-medium text-decoration-none" href="shop-grid-ls.html">View Products&nbsp;<i class="icon-arrow-right"></i></a>
           </div>
+
+          <div class="row align-items-center mt-2 padding-bottom-2x">
+              <div class="col-md-5">
+                  <div class="row">
+                      <div class="col-sm-4"><img class="d-block mx-auto mb-3" src="{{asset('template/images/3.jpeg')}}" alt="Image"></div>
+                      <div class="col-sm-4"><img class="d-block mx-auto mb-3" src="{{asset('template/images/4.jpeg')}}" alt="Image"></div>
+                      <div class="col-sm-4"><img class="d-block mx-auto mb-3" src="{{asset('template/images/8.jpeg')}}" alt="Image"></div>
+                      <div class="col-sm-4"><img class="d-block mx-auto mb-3" src="{{asset('template/images/11.jpeg')}}" alt="Image"></div>
+                      <div class="col-sm-4"><img class="d-block mx-auto mb-3" src="{{asset('template/images/15.jpeg')}}" alt="Image"></div>
+                      <div class="col-sm-4"><img class="d-block mx-auto mb-3" src="{{asset('template/images/14.jpeg')}}" alt="Image"></div>
+                  </div>
+              </div>
+              <div class="col-md-7 text-md-left text-center">
+                <h2>Why Choose Us?</h2>
+                <p class="pr-2 pl-2">E-xact Prints is a smart print shop based in Lagos; a leading provider of smart and innovative solution in digital printing, direct imaging printing, offset printing, large format printing, being an expert in printing solutions and technologies, our product and services offers our clients a wide variety of printing solutions that saves time and money, and enhance  the printing abilities of their organizations.
+
+With our comprehensive knowledge of print methodologies we offer our client innovative way of idea conceptualization, design generation and print planning arrangement which provide for professional and efficient handling of all printing jobs. If you are looking for a Professional Printing and Branding Company based in Nigeria, look no further, E-xact print is the No. 1 printing destination for all quality print lovers in Nigeria.</p>
+                <a class="text-medium text-decoration-none" href="">View Products&nbsp;<i class="icon-arrow-right"></i></a>
+              </div>
+          </div>
         </div>
         <hr>
         <hr>

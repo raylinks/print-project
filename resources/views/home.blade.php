@@ -27,7 +27,7 @@
                     <div class="h2 text-body text-white text-bold mb-4 pb-1">Flyers and Posters</div>
                   </div><a class="btn btn-primary scale-up delay-1" href="#products">View Projects</a>
                 </div>
-                <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="{{asset('template/images/16.jpeg')}}" alt="Puma Backpack"></div>
+                <div class="col-md-6 padding-bottom-2x mb-3"><img class="d-block mx-auto" src="{{asset('template/images/16.jpeg')}}" alt="Banner"></div>
               </div>
             </div>
           </div>

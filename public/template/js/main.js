@@ -20,3 +20,12 @@ window.onscroll = function () {
     }
 }
 
+
+var fileInput = document.getElementById('file-input');
+fileInput.onchange = function (event) {
+    var label = document.getElementById('file-input-label');
+    label.innerHTML = ""
+    for (let i = 0; i < event.target.files.length; i++) {
+        label.innerHTML += `  "${event.target.files[i].name}"`
+    }
+}

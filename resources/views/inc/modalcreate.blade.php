@@ -10,15 +10,15 @@
           <form action="{{route('admin.create')}}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="form-group row">
-              <label class="col-2 col-form-label" for="text-input">Title</label>
+              <label class="col-2 col-form-label" for="text-input">Enter Title</label>
               <div class="col-10">
                 <input class="form-control" type="text" id="text-input" name="title">
               </div>
             </div>
             <div class="form-group row">
-              <label class="col-2 col-form-label" for="textarea-input">Textarea</label>
+              <label class="col-2 col-form-label" for="textarea-input">Enter Description</label>
               <div class="col-10">
-                <textarea class="form-control" name="description" id="textarea-input" rows="5">Enter description</textarea>
+                <textarea class="form-control" name="description" id="textarea-input" rows="5"></textarea>
               </div>
             </div>
             <div class="form-group row">
@@ -26,7 +26,7 @@
               <div class="col-10">
                 <div class="custom-file">
                   <input class="custom-file-input" name="image[]" type="file" multiple id="file-input">
-                  <label class="custom-file-label" for="file-input">Choose file(s)...</label>
+                  <label class="custom-file-label" id="file-input-label" for="file-input"></label>
                 </div>
               </div>
             </div>

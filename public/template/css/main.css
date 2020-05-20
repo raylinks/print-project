@@ -45,19 +45,34 @@ h2,
     display: block;
 }
 
-
+/*
 @media screen and (max-width : 480px) {
     .header-hide {
         margin-top: 40px;
     }
-}
+} */
 
 @media screen and (max-width : 320px) {
-    .header-hide {
+    /* .header-hide {
         margin-top: 25px;
-    }
+    } */
 
     .search-input {
         margin-top: 9px;
+    }
+}
+
+@media screen and (max-width : 1024px) {
+    .header-hide img {
+        display: block;
+    }
+
+    div.topbar {
+        display: none;
+    }
+
+    .header-hide {
+        margin-top: 0px;
+        top: 0 !important;
     }
 }

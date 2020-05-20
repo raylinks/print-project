@@ -33,16 +33,6 @@
           </li>
           <li class=""><span><a href="{{url('/aboutUs')}}">ABOUT US</a><span class="sub-menu-toggle"></span></span>
           </li>
-          <li class=""><span><a href="{{url('/faq')}}">FAQ</a><span class="sub-menu-toggle"></span></span>
-          </li>
-          <li class="has-children"><span><a href="{{url('/blog')}}">BLOG</a><span class="sub-menu-toggle"></span></span>
-            {{-- <ul class="offcanvas-submenu">
-              <li><a href="#">SOMETHING</a></li>
-              <li><a href="#">MORE SOMETHING</a></li>
-            </ul> --}}
-          </li>
-          <li class=""><span><a href="{{url('/contactUs')}}">CONTACT US</a><span class="sub-menu-toggle"></span></span>
-          </li>
           <li class="has-children"><span><a href="{{url('/products_and_services')}}">PRODUCT AND SERVICES</a><span class="sub-menu-toggle"></span></span>
             <ul class="offcanvas-submenu">
               <li><a href="#">COPORATE BRANDING</a></li>
@@ -54,6 +44,20 @@
               <li><a href="#">POSTERS</a></li>
             </ul>
           </li>
+          <li class=""><span><a href="{{url('/how_it_works')}}">How It Works</a><span class="sub-menu-toggle"></span></span>
+          </li>
+          <li class=""><span><a href="{{url('/faq')}}">FAQ</a><span class="sub-menu-toggle"></span></span>
+          </li>
+          <li class=""><span><a href="{{url('/contactUs')}}">CONTACT US</a><span class="sub-menu-toggle"></span></span>
+          </li>
+          <li class="has-children"><span><a href="{{url('/blog')}}">BLOG</a><span class="sub-menu-toggle"></span></span>
+            {{-- <ul class="offcanvas-submenu">
+              <li><a href="#">SOMETHING</a></li>
+              <li><a href="#">MORE SOMETHING</a></li>
+            </ul> --}}
+          </li>
+
+
           <li class=""><span><a href="{{url('/special_offers')}}">SPECIAL OFFERS</a><span class="sub-menu-toggle"></span></span>
           </li>
         </ul>
@@ -70,16 +74,6 @@
           </li>
           <li class=""><span><a href="{{url('/aboutUs')}}">ABOUT US</a><span class="sub-menu-toggle"></span></span>
           </li>
-          <li class=""><span><a href="{{url('/faq')}}">FAQ</a><span class="sub-menu-toggle"></span></span>
-          </li>
-          <li class="has-children"><span><a href="{{url('/blog')}}">BLOG</a><span class="sub-menu-toggle"></span></span>
-            {{-- <ul class="offcanvas-submenu">
-              <li><a href="#">SOMETHING</a></li>
-              <li><a href="#">MORE SOMETHING</a></li>
-            </ul> --}}
-          </li>
-          <li class=""><span><a href="{{url('/contactUs')}}">CONTACT US</a><span class="sub-menu-toggle"></span></span>
-          </li>
           <li class="has-children"><span><a href="{{url('/products_and_services')}}">PRODUCTs AND SERVICES</a><span class="sub-menu-toggle"></span></span>
              <ul class="offcanvas-submenu">
               <li><a href="#">COPORATE BRANDING</a></li>
@@ -91,6 +85,20 @@
               <li><a href="#">POSTERS</a></li>
             </ul>
           </li>
+          <li class=""><span><a href="{{url('/how_it_works')}}">How It Works</a><span class="sub-menu-toggle"></span></span>
+          </li>
+          <li class=""><span><a href="{{url('/faq')}}">FAQ</a><span class="sub-menu-toggle"></span></span>
+          </li>
+          <li class=""><span><a href="{{url('/contactUs')}}">CONTACT US</a><span class="sub-menu-toggle"></span></span>
+          </li>
+          <li class="has-children"><span><a href="{{url('/blog')}}">BLOG</a><span class="sub-menu-toggle"></span></span>
+            {{-- <ul class="offcanvas-submenu">
+              <li><a href="#">SOMETHING</a></li>
+              <li><a href="#">MORE SOMETHING</a></li>
+            </ul> --}}
+          </li>
+
+
           <li class=""><span><a href="{{url('/special_offers')}}">SPECIAL OFFERS</a><span class="sub-menu-toggle"></span></span>
           </li>
         </ul>
@@ -108,9 +116,11 @@
             <i class="icon-bell"></i>
             &nbsp; +234 802 600 0690
         </a>
-         <form class="input-group form-group search-input" method="get"><span class="input-group-btn">
+         <form class="input-group form-group search-input" method="get" action="/product">
+            @csrf
+            <span class="input-group-btn">
                     <button type="submit"><i class="icon-search"></i></button></span>
-                  <input class="form-control" type="search" placeholder="Search site">
+                  <input class="form-control" type="search" name="search-input" placeholder="Search site">
          </form>
       </div>
     </div>
@@ -141,36 +151,7 @@
         <li class=""><a href="{{url('/aboutUs')}}"><span>ABOUT US</span></a>
           </li>
         @endif
-        @if(\Request::is('faq'))
-          <li class="active"><a href="{{url('/faq')}}"><span>FAQ</span></span></a>
-          </li>
-        @else
-        <li class=""><a href="{{url('/faq')}}"><span>FAQ</span></span></a>
-          </li>
-        @endif
-        @if(\Request::is('blog'))
-          <li class="active"><a href="{{url('/blog')}}"><span>BLOG</span></a>
-            {{-- <ul class="sub-menu">
-                <li><a href="">SOMETHING</a></li>
-                <li><a href="">SOMETHING</a></li>
-            </ul> --}}
-          </li>
-        @else
-        <li><a href="{{url('/blog')}}"><span>BLOG</span></a>
-            {{-- <ul class="sub-menu">
-                <li><a href="">SOMETHING</a></li>
-                <li><a href="">SOMETHING</a></li>
-            </ul> --}}
-          </li>
-        @endif
-        @if(\Request::is('contactUs'))
-          <li class="active"><a href="{{url('/contactUs')}}"><span>CONTACT US</span></a>
-          </li>
-        @else
-        <li><a href="{{url('/contactUs')}}"><span>CONTACT US</span></a>
-          </li>
-        @endif
-          <li class="has-megamenu"><a href="{{url('/products_and_services')}}"><span>PRODUCTS AND SERVICES</span></a>
+        <li class="has-megamenu"><a href="{{url('/products_and_services')}}"><span>PRODUCTS AND SERVICES</span></a>
             <ul class="mega-menu">
               <li><span class="mega-menu-title">COPORATE BRANDING</span>
                   <ul class="sub-menu">
@@ -200,6 +181,44 @@
               </li>
             </ul>
           </li>
+        @if(\Request::is('how_it_works'))
+          <li class="active"><a href="{{url('/how_it_works')}}"><span>How It Works</span></span></a>
+          </li>
+        @else
+        <li class=""><a href="{{url('/how_it_works')}}"><span>How It Works</span></span></a>
+          </li>
+        @endif
+        @if(\Request::is('faq'))
+          <li class="active"><a href="{{url('/faq')}}"><span>FAQ</span></span></a>
+          </li>
+        @else
+        <li class=""><a href="{{url('/faq')}}"><span>FAQ</span></span></a>
+          </li>
+        @endif
+        @if(\Request::is('contactUs'))
+          <li class="active"><a href="{{url('/contactUs')}}"><span>CONTACT US</span></a>
+          </li>
+        @else
+        <li><a href="{{url('/contactUs')}}"><span>CONTACT US</span></a>
+          </li>
+        @endif
+        @if(\Request::is('blog'))
+          <li class="active"><a href="{{url('/blog')}}"><span>BLOG</span></a>
+            {{-- <ul class="sub-menu">
+                <li><a href="">SOMETHING</a></li>
+                <li><a href="">SOMETHING</a></li>
+            </ul> --}}
+          </li>
+        @else
+        <li><a href="{{url('/blog')}}"><span>BLOG</span></a>
+            {{-- <ul class="sub-menu">
+                <li><a href="">SOMETHING</a></li>
+                <li><a href="">SOMETHING</a></li>
+            </ul> --}}
+          </li>
+        @endif
+
+
           <li><a href="{{url('/special_offers')}}"><span>SPECIAL OFFER</span></a>
           </li>
         </ul>
@@ -254,10 +273,25 @@
                    @endif
                 </section>
             </div>
+            <div class="col-lg-3 col-md-6 ">
+                <section class="widget widget-tags">
+                    <h3 class="widget-title">Like Us on Facebook</h3>
+                    <iframe src="//www.facebook.com/v2.6/plugins/page.php?adapt_container_width=true&container_width=265&width=265&height=200&hide_cover=false&href=https%3A%2F%2Fwww.facebook.com%2F859859330827038&locale=en_US&sdk=joey&show_facepile=true&show_posts=false&small_header=true" frameborder="0"></iframe>
+                </section>
+            </div>
+
           </div>
           <hr class="hr-light mt-2 margin-bottom-2x">
+          <div class="row">
+            <div class="col-md-7 padding-bottom-1x">
+              <!-- Payment Methods-->
+              <div class="margin-bottom-1x" style="max-width: 615px;">
+                <img class="d-block w-270 m-auto" style="float: left;" src="{{asset('template/images/bg-images/logo.jpeg')}}" alt="Online Shopping">
+              </div>
+            </div>
+          </div>
           <!-- Copyright-->
-          <p class="footer-copyright">© All rights reserved. E-xact Digital Print Media</p>
+          <p class="footer-copyright">© All rights reserved. E-xact Digital Print Media 2020</p>
         </div>
       </footer>
     </div>

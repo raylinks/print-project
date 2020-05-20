@@ -15,7 +15,7 @@ window.onload = function () {
 
 window.onscroll = function () {
     if (window.location.pathname == '/home') {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
             elements[0].classList.remove('navbar-ghost')
             elements[0].classList.remove('header-hide')
 
@@ -28,7 +28,7 @@ window.onscroll = function () {
         elements[0].classList.remove('navbar-ghost')
     }
     if (window.location.pathname != '/home') {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
             elements[0].classList.remove('header-other-page')
             elements[0].classList.add('header-other-page-2')
         } else {

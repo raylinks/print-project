@@ -34,7 +34,11 @@ Route::get('/contactUs', function () {
 });
 
 Route::get('/product', function (Request $request) {
-    $query = $request->query('tag');
+    if ($request->query('tag')) {
+        $query = $request->query('tag');
+    } else if ($request['search-input']) {
+        $query = $request['search-input'];
+    }
     // dd($query);
     $result = Product::where('title', $query)->first();
     return redirect(route('single', ['id' => $result->id]));

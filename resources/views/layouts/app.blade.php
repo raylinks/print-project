@@ -127,6 +127,11 @@
     <!-- Navbar-->
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
     <header class="navbar navbar-sticky navbar-ghost">
+      <form class="site-search" method="get" action="/product">
+        @csrf
+          <input type="text" name="search-input" placeholder="Type to search...">
+          <div class="search-tools"><span class="clear-search">Clear</span><span class="close-search"><i class="icon-cross"></i></span></div>
+      </form>
       <div class="site-branding">
         <div class="inner">
           {{-- <!-- Off-Canvas Toggle (#shop-categories)--><a class="offcanvas-toggle cats-toggle" href="#shop-categories" data-toggle="offcanvas"></a> --}}
@@ -224,7 +229,13 @@
         </ul>
       </nav>
       <!-- Toolbar-->
-
+      <div class="toolbar">
+        <div class="inner">
+          <div class="tools">
+            <div class="search"><i class="icon-search"></i></div>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- Off-Canvas Wrapper-->
     <div class="offcanvas-wrapper">

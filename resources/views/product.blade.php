@@ -22,7 +22,7 @@
             <div class="row">
           <!-- Poduct Gallery-->
           <div class="col-md-6">
-            <div class="product-gallery">
+            <div class="product-gallery" style="padding-top: 20px;">
                 {{-- <span class="product-badge text-danger">30% Off</span> --}}
               {{-- <div class="gallery-wrapper">
                 <div class="gallery-item video-btn text-center"><a href="#" data-toggle="tooltip" data-type="video" data-video="&lt;div class=&quot;wrapper&quot;&gt;&lt;div class=&quot;video-wrapper&quot;&gt;&lt;iframe class=&quot;pswp__video&quot; width=&quot;960&quot; height=&quot;640&quot; src=&quot;//www.youtube.com/embed/B81qd2v6alw?rel=0&quot; frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/div&gt;" title="Watch video"></a></div>
@@ -31,13 +31,13 @@
               <div class="product-carousel owl-carousel gallery-wrapper">
                   <p style="display: none;">{{$countH = 0}}</p>
                 @foreach ($product->images as $image)
-                    <div class="gallery-item" data-hash="{{$countH++}}"><a href="/stogare/image/{{$image->name}}" data-size="1000x667"><img src="/storage/image/{{$image->name}}" alt="Product"></a></div>
+                    <div class="gallery-item" data-hash="{{$countH++}}"><a href="/stogare/image/{{$image->name}}" data-size="1000x667"><img src="/storage/image/{{$image->name}}" style="height: 350px" alt="Product"></a></div>
                 @endforeach
             </div>
               <ul class="product-thumbnails">
                   <p style="display: none;">{{$count = 0}}</p>
                     @foreach ($product->images as $image)
-                        <li class="{{$countH == $count ? "active" : ""}}"><a href="#{{$count++}}"><img src="/storage/image/{{$image->name}}" alt="Product"></a></li>
+                        <li class="{{$countH == $count ? "active" : ""}}"><a href="#{{$count++}}"><img src="/storage/image/{{$image->name}}" style="height: 100px" alt="Product"></a></li>
                     @endforeach
               </ul>
             </div>
@@ -47,7 +47,8 @@
             <div class="padding-top-2x mt-2 hidden-md-up"></div>
               {{-- <div class="rating-stars"><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star"></i>
               </div><span class="text-muted align-middle">&nbsp;&nbsp;4.2 | 3 customer reviews</span> --}}
-            <h2 class="padding-top-1x text-normal">{{$product->title}}</h2><span class="h2 d-block">
+            <h2 class="padding-top-1x text-bold">{{$product->title}}</h2>
+            {{-- <span class="h2 d-block"> --}}
               {{-- <del class="text-muted text-normal">$68.00</del>&nbsp; $47.60</span> --}}
             <p>{{$product->description}}</p>
 

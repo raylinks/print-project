@@ -59,14 +59,14 @@ Our project timeline is as important to us as our delivering excellence in print
           </div>
       </section>
             <!-- Featured Products Carousel-->
-      <section class="container padding-top-3x padding-bottom-3x" id="products">
+      <section class="container padding-top-1x padding-bottom-3x" id="products">
         <h3 class="text-center mb-30">Products and Services</h3>
           <div class="row">
               <!-- Product-->
               @if (count($products) > 0)
                   @foreach ($products as $product)
                     <div class="grid-item col-md-4">
-                        <div class="product-card">
+                        {{-- <div class="product-card">
                             <div class="product-badge text-danger"></div><a class="product-thumb" href="/single/{{$product->id}}"><img src="/storage/image/{{$product->images[0]->name}}" alt="Product"></a>
                             <h3 class="product-title"><a href="/single/{{$product->id}}">{{$product->title}}</a></h3>
                             {{-- <h4 class="product-price">
@@ -76,12 +76,24 @@ Our project timeline is as important to us as our delivering excellence in print
                                 <button class="btn btn-outline-secondary btn-sm btn-wishlist" data-toggle="tooltip" title="Whishlist"><i class="icon-heart"></i></button>
                                 <button class="btn btn-outline-primary btn-sm" data-toast data-toast-type="success" data-toast-position="topRight" data-toast-icon="icon-circle-check" data-toast-title="Product" data-toast-message="successfuly added to cart!">Add to Cart</button>
                             </div> --}}
+                        {{-- </div> --}}
+
+                        <!------- New Card---------->
+                        <div class="product-card-image mt-3">
+                            <a href="/single/{{$product->id}}">
+                                <img src="/storage/image/{{$product->images[0]->name}}" alt="" class="product-image">
+                                <div class="overlay">
+                                    <div class="text-title">
+                                        {{$product->title}}
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                   @endforeach
               @else
                   <div class="col-md-12">
-                      <p>No Available Products</p>
+                      <p class="h3 text-bold">No Available Products</p>
                   </div>
               @endif
           </div>
@@ -90,10 +102,10 @@ Our project timeline is as important to us as our delivering excellence in print
       <section class="container-fluid">
         <div class="row justify-content-center">
           <div class="col-xl-10 col-lg-12">
-            <div class="fw-section rounded padding-top-4x padding-bottom-4x" style="background-image: url(img/banners/home02.jpg);"><span class="overlay rounded" style="opacity: .35;"></span>
+            <div class="fw-section rounded padding-top-4x padding-bottom-4x" style="background-image: url({{asset('template/images/bg-images/background3.jpeg')}});"><span class="overlay rounded" style="opacity: .35;"></span>
               <div class="text-center">
-                <h3 class="display-4 text-normal text-white text-shadow mb-1">Old Collection</h3>
-                <h2 class="display-2 text-bold text-white text-shadow">HUGE SALE!</h2>
+                <h3 class="display-4 text-normal text-white text-shadow mb-1">Print With Us</h3>
+                <h2 class="display-2 text-bold text-white text-shadow">@ AFFORDABLE PRICES</h2>
                 <h4 class="d-inline-block h2 text-normal text-white text-shadow border-default border-left-0 border-right-0 mb-4">at our outlet stores</h4><br><a class="btn btn-primary margin-bottom-none" href="contacts.html">Locate Stores</a>
               </div>
             </div>

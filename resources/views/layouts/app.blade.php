@@ -105,7 +105,7 @@
       </nav>
     </div>
     <!-- Topbar-->
-    <div class="topbar">
+    <div class="topbar pb-2 pt-2">
       <div class="topbar-column col-md-6"><img class="d-block w-270 m-auto" style="float: left;" src="{{asset('template/images/bg-images/logo.jpeg')}}" alt="Online Shopping"></div>
       <div class="topbar-column col-md-6">
         <a class="hidden-md-down" href="mailto:">

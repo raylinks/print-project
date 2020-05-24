@@ -52,7 +52,7 @@
           <div class="row">
               <div class="col-md-12">
                   <p class="text-center h3">
-                    E-xact is Nigeria’s most innovative Printing and Branding Company based in Lagos, Nigeria; duly registered  with CAC as E-xact Global Media Services Rec (2897132) . Our designs are brilliant and our prints, very exclusive. We offer full range of printing and branding services to a wide range of clients operating across different industry sectors all across Nigeria and beyond. E-xact is a One stop shop for all your printing needs; our custom made solutions are tailored specifically to meet your peculiar needs ensuring the best output throughout the process. Join our happy customers who made E-xact their most preferred printing destination in Nigeria. Let us earn your loyalty, give us a trial Today.
+                    E-xact is Nigeria’s most innovative Printing and Branding Company based in Lagos, Nigeria; duly registered  with CAC as E-xact Global Media Services (RC.2897132) . Our designs are brilliant and our prints, very exclusive. We offer full range of printing and branding services to a wide range of clients operating across different industry sectors all across Nigeria and beyond. E-xact is a One stop shop for all your printing needs; our custom made solutions are tailored specifically to meet your peculiar needs ensuring the best output throughout the process. Join our happy customers who made E-xact their most preferred printing destination in Nigeria. Let us earn your loyalty, give us a trial Today.
 Our project timeline is as important to us as our delivering excellence in print.  From the design and print of Business Cards, Corporate Stationary, Display Banners, Signs and Displays, Stamps and Seals, Marketing Materials to the Branding of Vehicles, Clothing, Gifts and Souvenirs, we provide quality finishing using our cutting-edge printing technology.”
                   </p>
               </div>
@@ -65,7 +65,7 @@ Our project timeline is as important to us as our delivering excellence in print
               <!-- Product-->
               @if (count($products) > 0)
                   @foreach ($products as $product)
-                    <div class="grid-item col-md-4">
+                    <div class="grid-item col-md-4 mt-3 mb-3">
                         {{-- <div class="product-card">
                             <div class="product-badge text-danger"></div><a class="product-thumb" href="/single/{{$product->id}}"><img src="/storage/image/{{$product->images[0]->name}}" alt="Product"></a>
                             <h3 class="product-title"><a href="/single/{{$product->id}}">{{$product->title}}</a></h3>
@@ -79,7 +79,7 @@ Our project timeline is as important to us as our delivering excellence in print
                         {{-- </div> --}}
 
                         <!------- New Card---------->
-                        <div class="product-card-image mt-3">
+                        <div class="product-card-image">
                             <a href="/single/{{$product->id}}">
                                 <img src="/storage/image/{{$product->images[0]->name}}" alt="" class="product-image">
                                 <div class="overlay">
@@ -89,6 +89,7 @@ Our project timeline is as important to us as our delivering excellence in print
                                 </div>
                             </a>
                         </div>
+                        <p class="text-center text-bold" style="color: black; font-size: large;">{{$product->title}}</p>
                     </div>
                   @endforeach
               @else

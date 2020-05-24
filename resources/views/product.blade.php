@@ -50,7 +50,7 @@
             <h2 class="padding-top-1x text-bold">{{$product->title}}</h2>
             {{-- <span class="h2 d-block"> --}}
               {{-- <del class="text-muted text-normal">$68.00</del>&nbsp; $47.60</span> --}}
-            <p>{{$product->description}}</p>
+            <p class="h5">{{$product->description}}</p>
 
             {{-- <div class="pt-1 mb-2"><span class="text-medium">SKU:</span> #21457832</div>
             <div class="padding-bottom-1x mb-2"><span class="text-medium">Categories:&nbsp;</span><a class="navi-link" href="#">Men’s shoes,</a><a class="navi-link" href="#"> Snickers,</a><a class="navi-link" href="#"> Sport shoes</a></div>

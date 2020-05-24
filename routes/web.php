@@ -33,6 +33,10 @@ Route::get('/contactUs', function () {
     return view('contactus');
 });
 
+Route::get('/how_it_works', function () {
+    return view('howitworks');
+});
+
 Route::get('/product', function (Request $request) {
     if ($request->query('tag')) {
         $query = $request->query('tag');

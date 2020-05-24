@@ -26,7 +26,7 @@
             <hr class="margin-bottom-1x">
             @if (count($products) > 0)
                 @foreach ($products as $product)
-                    <div class="product-card product-list margin-bottom-none"><a class="product-thumb" href="#">
+                    <div class="product-card product-list margin-bottom-none mt-3"><a class="product-thumb" href="#">
                             {{-- <div class="rating-stars">
                                 <i class="icon-star filled">
                                 </i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i><i class="icon-star filled"></i>

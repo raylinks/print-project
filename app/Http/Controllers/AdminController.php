@@ -15,6 +15,7 @@ class AdminController extends Controller
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index()
     {
@@ -72,6 +73,8 @@ class AdminController extends Controller
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
+     * 
+     * @return void
      */
     public function delete($id)
     {

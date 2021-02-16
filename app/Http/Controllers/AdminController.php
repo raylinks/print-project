@@ -29,6 +29,8 @@ class AdminController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * 
+     * @return void
      */
     public function create(Request $request)
     {
@@ -64,38 +66,6 @@ class AdminController extends Controller
 
         return redirect('/admin')->with('success', ' Product Saved');
     }
-
-    // /**
-    //  * Display the specified resource.
-    //  *
-    //  * @param  int  $id
-    //  * @return \Illuminate\Http\Response
-    //  */
-    // public function show($id)
-    // {
-    //     //
-    // }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-    //  */
-    // public function update(Request $request, $id)
-    // {
-    //     $product = Product::findorfail($id);
-
-    //     $this->validate($request, [
-    //         'title' => 'required|string',
-    //         'image' => 'image|nullable|max:1999',
-    //         'description' => 'required|string'
-
-    //     ]);
-
-
-    // }
 
     /**
      * Remove the specified resource from storage.
